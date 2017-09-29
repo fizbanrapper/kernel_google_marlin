@@ -32,3 +32,5 @@ obj-$(CONFIG_PSERIES_CPUIDLE)		+= cpuidle-pseries.o
 obj-$(CONFIG_POWERNV_CPUIDLE)		+= cpuidle-powernv.o
 
 obj-$(CONFIG_MSM_PM) += lpm-levels.o  lpm-levels-of.o lpm-workarounds.o
+
+KBUILD_CFLAGS	+=-Wno-format-security

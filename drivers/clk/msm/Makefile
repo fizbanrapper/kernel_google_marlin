@@ -46,3 +46,5 @@ obj-$(CONFIG_ARCH_MSM8916)      += clock-cpu-8953.o
 
 obj-y				+= gdsc.o
 obj-y				+= mdss/
+
+KBUILD_CFLAGS	+=-Wno-format-security

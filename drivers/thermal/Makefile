@@ -45,3 +45,5 @@ obj-$(CONFIG_THERMAL_QPNP_ADC_TM)	+= qpnp-adc-tm.o
 obj-$(CONFIG_THERMAL_MONITOR)	+= msm_thermal.o msm_thermal-dev.o
 obj-$(CONFIG_LIMITS_MONITOR)	+= lmh_interface.o
 obj-$(CONFIG_LIMITS_LITE_HW)	+= lmh_lite.o
+
+KBUILD_CFLAGS	+=-Wno-format-security

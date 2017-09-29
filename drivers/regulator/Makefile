@@ -111,3 +111,5 @@ obj-$(CONFIG_REGULATOR_STUB) += stub-regulator.o
 obj-$(CONFIG_REGULATOR_KRYO) += kryo-regulator.o
 obj-$(CONFIG_REGULATOR_CPR2_GFX) += cpr2-gfx-regulator.o
 ccflags-$(CONFIG_REGULATOR_DEBUG) += -DDEBUG
+
+KBUILD_CFLAGS	+=-Wno-format-security

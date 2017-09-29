@@ -69,3 +69,5 @@ ifdef CONFIG_COMPAT
 obj-$(CONFIG_MSM_ADSPRPC)       += adsprpc_compat.o
 endif
 obj-$(CONFIG_MSM_RDBG)		+= rdbg.o
+
+KBUILD_CFLAGS	+=-Wno-format-security
